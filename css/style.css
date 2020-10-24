@@ -1,0 +1,215 @@
+body, p {
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding-top: 9;
+  padding-bottom: 8;
+  background-color: #484848;
+  backface-visibility: hidden;
+}
+
+.contacts-item {
+  display: flex;
+  margin-right: 35px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #f5135c
+}
+
+.contacts-item:last-child {
+  margin-right: 0;
+}
+
+.contacts-item__value {
+  color: #ffffff
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  height: 94px;
+  padding-top: 17px;
+  background: #5b749a;
+  background: linear-gradient(to bottom, #708fb1 0%, #5e789e 36%, #3c4c71 100%);
+  backface-visibility: hidden;
+}
+
+.header__logo {
+  width: 242px;
+  height: 55px;
+}
+
+.menu__link::before {
+  width: 2px;
+  height: 29px;
+  background-image: url('../img/border_line.png');
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
+  background-color: #ffffff;
+  opacity: .78;
+}
+
+.menu__link {
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-right: 65px;
+}
+
+.menu__link:last-child {
+  margin-right: 0;
+}
+
+.banner {
+  background-image: url('../img/main_uncle_and_card.png');
+  background-size: cover;
+  width: 100%;
+  height: 642px;
+  margin-top: -105px;
+  margin-bottom: 62px;
+}
+
+.banner__title {
+  position: relative;
+  top: 550px;
+  left: 500px;
+  width: 769px;
+  text-transform: uppercase;
+  color: #fff;
+  height: 78px;
+  font-size: 29px;
+}
+
+.information {
+  width: 1160px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+.information__question {
+  margin-bottom: 33px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 29px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #f5135c;
+}
+
+.information__wrapper {
+  width: 1109px;
+  margin: auto;
+}
+
+.information__discriprions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.information__discriprions_value {
+  display: table;
+}
+
+.information__box {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.information__image {
+  padding-right: 50px;
+}
+
+.information__checkmark {
+  display: flex;
+  flex-direction: column;
+}
+
+.information__subtitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 34px;
+}
+
+.information__text::before {
+  content: url("../img/checkmark.png");
+  margin-right: 9px;
+  width: 29px;
+  height: 29px;
+}
+
+.information__text {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  font-weight: normal;
+  width: 529px;
+  margin-bottom: 19px;
+}
+
+.information__text:last-child {
+  margin-bottom: 0;
+}
+
+.information__subtitle-value {
+  font-weight: bold;
+}
+
+.information__importants {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #f5135c;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../img/content_background.png');
+  background-size: cover;
+  height: 624px;
+  padding-top: 40px;
+  margin-bottom: 63px;
+
+}
+.content__title{
+  width: 1089px;
+  height: 46px;
+  font-size: 18px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.content__discription{
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+.content__image{
+  width: 741px;
+  display: flex;
+  justify-content: space-between;
+}

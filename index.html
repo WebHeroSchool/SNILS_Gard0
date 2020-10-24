@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>SNILS.SU</title>
+</head>
+
+<body>
+  <div class="contacts">
+    <div class="contacts-item">
+      <div class="contacts-item__property">Режим работы:</div>
+      <div class="contacts-item__value">Ежедневно с 10:00 до 22:00</div>
+    </div>
+    <div class="contacts-item">
+      <div class="contacts-item__property">Тел: </div>
+      <div class="contacts-item__value">+7 (499) 394-30-29</div>
+    </div>
+    <div class="contacts-item">
+      <div class="contacts-item__property">E-mail: </div>
+      <div class="contacts-item__value">info@snilsa.net</div>
+    </div>
+    <div class="contacts-item">
+      <div class="contacts-item__property">Наш адрес: </div>
+      <div class="contacts-item__value">ул. Сходненская, д. 50</div>
+    </div>
+  </div>
+  <div class="header">
+    <a class="header__logo">
+      <img src="img/logo.png" alt="logo_snils.su"></a>
+  </div>
+
+  <div class="menu">
+    <!-- для кажного из а прописать | (картинка с размерами как в макете) шедоу элементом "поиграть с background size-->
+    <a class="menu__link" href="">Главная</a>
+    <!-- обработать клик в сплывающем меню JS -->
+    <a class="menu__link menu__link_active" id="menu_item" href="">Вопросы и Ответы</a>
+    <a class="menu__link" href="">Порядок работы</a>
+    <a class="menu__link " href="">Контакты</a>
+    <a class="menu__link" href="">Сделать заявку</a>
+  </div>
+  <div class="banner">
+    <div class="banner__title">Страховое свидетельство обязательного пенсионного страхования</div>
+  </div>
+  <div class="information">
+    <div class="information__question">
+      снилс, что это за документ и зачем он нужен?</div>
+    <div class="information__wrapper">
+      <div class="information__discriprions">
+        СНИЛС − номер лицевого счёта гражданина Российской Федерации, используемый в системе пенсионного страхования.
+        Он становится основой для сосредоточения максимально полной информации о рабочем стаже человека и уровне
+        страховых отчислений (взносов), производимых на его имя.
+        <span class="information__discriprions_value">Таким образом, вопрос, нужен ли СНИЛС, даже не стоит.</span>
+      </div>
+      <div class="information__box">
+        <div class="information__image">
+          <img class="information__image-snils" src="img/information__snils.png" alt="information__snils.png">
+        </div>
+        <div class="information__checkmark">
+          <div class="information__subtitle">
+            Внешне СНИЛС представляет собой зелёную карту − страховое свидетельство
+            государственного пенсионного страхования. Указанный документ необходим
+            для решения таких задач:
+          </div>
+          <div class="information__text">Перевод средств работнику в счёт будущей пенсии;
+          </div>
+          <div class="information__text">Регистрация лица на портале госуслуг;
+          </div>
+          <div class="information__text">Обмен информацией о том или ином гражданине между разными
+            инстанциями и структурами;
+          </div>
+          <div class="information__text">Получение всех видов социальных пособий (государственной помощи);
+          </div>
+        </div>
+      </div>
+      <div class="information__importants">Теперь вы понимаете, какой СНИЛС важный документ, и наверняка займётесь
+        вопросом его оформления.
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="content__title">Теперь вы понимаете, какой СНИЛС важный документ, и наверняка займётесь вопросом его
+      оформления. Процесс
+      оформления документа зависит от того, трудоустроены ли вы или не работаете на официальных основаниях.</div>
+    <div class="content__discription">Как и где сделать СНИЛС?</div>
+    <div class="content__image">
+      <img src="img/trudovaya.png" alt="trudovaya.png">
+      <img src="img/zarplata.png" alt="zarplata.png">
+    </div>
+    <div class="content__work">Вы трудоустроены
+      <p class="content__work-text">Вам не придётся заботиться об этом
+        процессе. Сделать СНИЛС через 2 недели после
+        приёма на работу должен ваш руководитель
+        (требуется заполнение анкеты АДВ-1 и паспорт).</p>
+    </div>
+    <div class="content__unemployed">Не работаете на официальных основаниях
+      <p class="content__unemployed-text">Если же вы не работаете, то должны сами
+        обратиться в отделение Пенсионного фонда
+        по месту регистрации. Перечень документов
+        минимален и включает в себя:
+        1) анкету застрахованного лица, которая
+        составляется по форме АДВ-1;
+        2) паспорт.</p>
+    </div>
+  </div>
+  <form class="form">
+    <div class="form__title">ЕСЛИ У ВАС ЕСТЬ ВОПРОСЫ, ЗАДАЙТЕ ИХ НАШИМ МЕНЕДЖЕРАМ</div>
+    <input placeholder="Ваше имя*" type="text">
+    <input placeholder="Телефон*" type="text">
+    <input placeholder="Ваш вопрос.." type="text">
+    <div class="form__button">Отправить запрос</div>
+    <img src="img/form_background.svg" alt="form_background">
+  </form>
+  <div class="protection">
+    <img src="img/snils.png" alt="snils">
+    <p class="protection__text">
+      Отдельная ситуация − утеря СНИЛС или смена фамилии. Чтобы получить новый документ, вам нужно обратиться
+      к работодателю или самостоятельно в Пенсионный фонд с соответствующим заявлением.
+      Изменения не коснутся номера документа: вам выдадут дубликат или СНИЛС с новой фамилией, но той же цифровой
+      комбинацией.
+      Обратите внимание, что ваши данные надёжно защищены. Узнать СНИЛС по интернету не получится − это
+      конфиденциальные сведения.
+      Если у вас нет времени самостоятельно заниматься оформлением документа, доверьте эту задачу специалистам нашей
+      компании.
+      Мы гарантируем ускоренное оформление СНИЛС. Просто заполните заявку на нашем сайте.
+    </p>
+  </div>
+  <div class="registration">
+    <div class="registration__title">У ВАС ПОЯВИЛИСЬ ВОПРОСЫ? ОСТАВИТЬ ЗАЯВКУ
+      МЫ ВАМ ОТВЕТИМ В ТЕЧЕНИ 30 МИН
+    </div>
+    <div class="registration__form">
+      <input placeholder="Ваше имя" type="text">
+      <input placeholder="Телефон" type="text">
+      <input placeholder="Ваша почта" type="text">
+      <input placeholder="Задавайте свой вопрос" type="text">
+    </div>
+    <div class="registration__button">Отправить запрос</div>
+  </div>
+</body>
+
+</html>
