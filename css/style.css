@@ -54,12 +54,6 @@ a {
   height: 55px;
 }
 
-.menu__link::before {
-  width: 2px;
-  height: 29px;
-  background-image: url('../img/border_line.png');
-}
-
 .menu {
   display: flex;
   align-items: center;
@@ -271,11 +265,13 @@ a {
   width: 480px;
   text-transform: uppercase;
   font-size: 30px;
+  margin-right: 101px;
 }
 
 .form__item {
   height: 354px;
-  width: 286px;
+  min-width: 286px;
+  margin-right: 98px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -310,7 +306,7 @@ a {
 }
 
 .form-item__input_text {
-  height: 98px;
+  height: 101px;
   padding-bottom: 66px;
 }
 
@@ -353,4 +349,102 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.registration {
+  background-image: url('../img/registration_background_img.png');
+  height: 404px;
+}
+
+.registration__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.registration-menu__link {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-right: 65px;
+  margin-bottom: 15px;
+  padding-top: 23px;
+  color: #fff;
+}
+
+.registration-form__wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.registration__title {
+  width: 350px;
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.registration-item__wrap {
+  display: flex;
+}
+
+.registration-item__property {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-right: 14px;
+}
+
+.registration-item__value {
+  border: none;
+  outline: none;
+  width: 241px;
+  height: 26px;
+  border-radius: 2px;
+  font-size: 13px;
+  font-style: normal;
+  line-height: 25px;
+  padding-left: 9px;
+  box-sizing: border-box;
+  background-color: #FFFF;
+  color: #000000;
+  margin-bottom: 11px;
+}
+
+.registration-item__value:last-child {
+  margin-bottom: 28px;
+}
+
+.registration-item__button {
+  border-radius: 4px;
+  background-color: #ec2b6a;
+  color: #fff;
+  width: 155px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 17px;
+  border: none;
+  outline: none;
+}
+
+.registration-item__input_text {
+  height: 101px;
+  padding-bottom: 66px;
+  margin-right: 388px;
+}
+
+.registration__logo {
+  width: 245px;
+  height: 144px;
 }
