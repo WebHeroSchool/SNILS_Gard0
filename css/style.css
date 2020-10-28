@@ -69,6 +69,11 @@ a {
   margin-right: 65px;
 }
 
+.menu__link:hover {
+  opacity: .46;
+  cursor: pointer;
+}
+
 .menu__link:last-child {
   margin-right: 0;
 }
@@ -218,14 +223,14 @@ a {
   margin-bottom: 37px;
 }
 
-.content-box__wrapper {
+.content-box {
   display: flex;
   align-items: baseline;
   justify-content: space-around;
   width: 960px;
 }
 
-.content-box {
+.content-box__wrapper {
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -268,7 +273,7 @@ a {
   margin-right: 101px;
 }
 
-.form__item {
+.form-item {
   height: 354px;
   min-width: 286px;
   margin-right: 98px;
@@ -305,7 +310,7 @@ a {
   margin-bottom: 11px;
 }
 
-.form-item__input_text {
+.form-item__input {
   height: 101px;
   padding-bottom: 66px;
 }
@@ -352,11 +357,12 @@ a {
 }
 
 .registration {
+  display: block;
   background-image: url('../img/registration_background_img.png');
   height: 404px;
 }
 
-.registration__menu {
+.registration-menu {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -374,9 +380,21 @@ a {
   color: #fff;
 }
 
+.registration-menu__link:hover {
+  opacity: .46;
+  cursor: pointer;
+}
+
 .registration-form__wrap {
   display: flex;
   align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+
+.registration__form {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -386,13 +404,7 @@ a {
   margin-bottom: 17px;
 }
 
-.registration__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.registration-item__wrap {
+.registration-item {
   display: flex;
 }
 
@@ -438,13 +450,41 @@ a {
   outline: none;
 }
 
+.registration-item__button:hover {
+  opacity: .46;
+  cursor: pointer;
+}
+
 .registration-item__input_text {
   height: 101px;
   padding-bottom: 66px;
   margin-right: 388px;
 }
 
-.registration__logo {
+.registration__img {
   width: 245px;
   height: 144px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+}
+
+.footer-item {
+  display: flex;
+  margin-right: 35px;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-item__property {
+  margin-right: 5px;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
 }
