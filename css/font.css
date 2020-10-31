@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'PlumbCondensed';
+  src: url('../fonts/plumb_condenced/300/plumbcondensedlight.eot');
+  src: url('../fonts/plumb_condenced/300/plumbcondensedlight.eot') format('embedded-opentype'),
+    url('../fonts/plumb_condenced/300/plumbcondensedlight.woff2') format('woff2'),
+    url('../fonts/plumb_condenced/300/plumbcondensedlight.woff') format('woff'),
+    url('../fonts/plumb_condenced/300/plumbcondensedlight.ttf') format('truetype'),
+    url('../fonts/plumb_condenced/300/plumbcondensedlight.svg#plumbcondensedlight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlumbCondensed';
+  src: url('../fonts/plumb_condenced/400/plumbcondensedregular.eot');
+  src: url('../fonts/plumb_condenced/400/plumbcondensedregular.eot') format('embedded-opentype'),
+    url('../fonts/plumb_condenced/400/plumbcondensedregular.woff2') format('woff2'),
+    url('../fonts/plumb_condenced/400/plumbcondensedregular.woff') format('woff'),
+    url('../fonts/plumb_condenced/400/plumbcondensedregular.ttf') format('truetype'),
+    url('../fonts/plumb_condenced/400/plumbcondensedregular.svg#plumbcondensedregular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PlumbCondensed';
+    src: url('../fonts/plumb_condenced/700/plumbcondensedbold.eot');
+    src: url('../fonts/plumb_condenced/700/plumbcondensedbold.eot') format('embedded-opentype'),
+         url('../fonts/plumb_condenced/700/plumbcondensedbold.woff2') format('woff2'),
+         url('../fonts/plumb_condenced/700/plumbcondensedbold.woff') format('woff'),
+         url('../fonts/plumb_condenced/700/plumbcondensedbold.ttf') format('truetype'),
+         url('../fonts/plumb_condenced/700/plumbcondensedbold.svg#plumbcondensedbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}

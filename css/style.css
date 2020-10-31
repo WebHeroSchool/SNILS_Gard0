@@ -1,6 +1,11 @@
-body, p {
-  margin: auto;
+body {
+  margin: 0;
+  padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial;
+}
+
+p {
+  margin: auto;
 }
 
 a {
@@ -9,26 +14,28 @@ a {
 }
 
 .contacts {
+  background-color: #484848;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+
+.contacts-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 34px;
-  padding-top: 9;
-  padding-bottom: 8;
-  background-color: #484848;
-  backface-visibility: hidden;
 }
 
 .contacts-item {
   display: flex;
-  margin-right: 35px;
+  margin-right: 32px;
+  margin-left: 31px;
   font-size: 17px;
   text-transform: uppercase;
+  font-family: 'PlumbCondensed';
 }
 
-.contacts-item:last-child {
-  margin-right: 0;
-}
+/* .contacts-item:last-child {
+} */
 
 .contacts-item__property {
   color: #f5135c;
@@ -39,11 +46,11 @@ a {
   color: #ffffff
 }
 
-.header {
+.logo {
   display: flex;
   justify-content: center;
-  height: 94px;
   padding-top: 17px;
+  padding-bottom: 22px;
   background: #5b749a;
   background: linear-gradient(to bottom, #708fb1 0%, #5e789e 36%, #3c4c71 100%);
   backface-visibility: hidden;
@@ -52,42 +59,70 @@ a {
 .header__logo {
   width: 242px;
   height: 55px;
+  margin-right: 25px;
 }
 
-.menu {
+.main {
+  position: relative;
+  background-image: url('../img/main_uncle_and_card.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 642px;
+  margin-top: 0px;
+  margin-bottom: 62px;
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+}
+
+.main-menu {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 38px;
-  background-color: #ffffff;
-  opacity: .78;
+  background-color: rgb(255 255 255 / 76%);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px 6px 12px 2px rgb(0 0 0 / 35%);
 }
 
-.menu__link {
+.main-menu__link {
   font-size: 18px;
   text-transform: uppercase;
-  margin-right: 65px;
+  margin-right: 0;
+  font-family: 'PlumbCondensed';
+  padding: 0px 34px 0 34px;
+  background-image: url('../img/border_line.png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.menu__link:hover {
+.main-menu__link>span {
+  padding: 0 35px 0 35px;
+  padding-bottom: 2px;
+}
+
+.main-menu__link_active>span {
+  border-bottom: 2px solid #f5135c;
+}
+
+.main-menu__link:hover {
   opacity: .46;
   cursor: pointer;
 }
 
-.menu__link:last-child {
-  margin-right: 0;
+.main-menu__link:last-child {
+  margin-right: 0px;
+  padding-right: 26px;
+  background-image: url('../img/border_line.png'), url('../img/border_line.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position: 0 0, 100% 0px;
 }
 
-.banner {
-  background-image: url('../img/main_uncle_and_card.png');
-  background-size: cover;
-  width: 100%;
-  height: 642px;
-  margin-top: -105px;
-  margin-bottom: 62px;
-}
-
-.banner__title {
+.main__title {
   position: relative;
   top: 550px;
   left: 500px;

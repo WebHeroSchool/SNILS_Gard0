@@ -4,51 +4,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/scale.css">
   <title>SNILS.SU</title>
 </head>
 
 <body>
-  <div class="contacts">
-    <div class="contacts-item">
-      <div class="contacts-item__property">Режим работы:</div>
-      <div class="contacts-item__value">Ежедневно с 10:00 до 22:00</div>
-    </div>
-    <div class="contacts-item">
-      <div class="contacts-item__property">Тел: </div>
-      <div class="contacts-item__value">+7 (499) 394-30-29</div>
-    </div>
-    <div class="contacts-item">
-      <div class="contacts-item__property">E-mail: </div>
-      <div class="contacts-item__value">info@snilsa.net</div>
-    </div>
-    <div class="contacts-item">
-      <div class="contacts-item__property">Наш адрес: </div>
-      <div class="contacts-item__value">ул. Сходненская, д. 50</div>
-    </div>
-  </div>
-  <div class="header">
-    <a class="header__logo">
-      <img src="img/logo.png" alt="logo_snils.su"></a>
-  </div>
-
-  <div class="menu">
-    <!-- для кажного из а прописать | (картинка с размерами как в макете) шедоу элементом "поиграть с background size-->
-    <a class="menu__link" href="">Главная</a>
-    <!-- обработать клик в сплывающем меню JS -->
-    <a class="menu__link menu__link_active" id="menu_item" href="">Вопросы и Ответы</a>
-    <a class="menu__link" href="">Порядок работы</a>
-    <a class="menu__link " href="">Контакты</a>
-    <a class="menu__link" href="">Сделать заявку</a>
-  </div>
-  <div class="banner">
-    <div class="banner__title">Страховое свидетельство обязательного пенсионного страхования</div>
-  </div>
-  <div class="information">
+  <header>
+    <section class="contacts">
+      <div class="contacts-container">
+        <div class="contacts-item">
+          <div class="contacts-item__property">Режим работы:</div>
+          <div class="contacts-item__value">Ежедневно с 10:00 до 22:00</div>
+        </div>
+        <div class="contacts-item">
+          <div class="contacts-item__property">Тел: </div>
+          <div class="contacts-item__value">+7 (499) 394-30-29</div>
+        </div>
+        <div class="contacts-item">
+          <div class="contacts-item__property">E-mail: </div>
+          <div class="contacts-item__value">info@snilsa.net</div>
+        </div>
+        <div class="contacts-item">
+          <div class="contacts-item__property">Наш адрес: </div>
+          <div class="contacts-item__value">ул. Сходненская, д. 50</div>
+        </div>
+      </div>
+    </section>
+    <logo class="logo">
+      <a class="header__logo">
+        <img src="img/logo.png" alt="logo_snils.su"></a>
+    </logo>
+  </header>
+  <section class="main">
+    <nav class="main-menu">
+      <a class="main-menu__link" href=""><span>Главная</span></a>
+      <a class="main-menu__link main-menu__link_multiple" id="menu_item" href=""><span>Вопросы и Ответы</span></a>
+      <a class="main-menu__link main-menu__link_active" href=""><span>Порядок работы</span></a>
+      <a class="main-menu__link " href=""><span>Контакты</span></a>
+      <a class="main-menu__link" href=""><span>Сделать заявку</span></a>
+    </nav>
+    <div class="main__title">Страховое свидетельство обязательного пенсионного страхования</div>
+  </section>
+  <section class="information">
     <div class="information__question">
       снилс, что это за документ и зачем он нужен?</div>
-    <div class="information__wrapper">
+    <wrap class="information__wrapper">
       <div class="information__discriprions">
         СНИЛС − номер лицевого счёта гражданина Российской Федерации, используемый в системе пенсионного страхования.
         Он становится основой для сосредоточения максимально полной информации о рабочем стаже человека и уровне
@@ -79,9 +81,9 @@
       <div class="information__importants">Теперь вы понимаете, какой СНИЛС важный документ, и наверняка займётесь
         вопросом его оформления.
       </div>
-    </div>
-  </div>
-  <div class="content">
+    </wrap>
+  </section>
+  <section class="content">
     <div class="content__title">Теперь вы понимаете, какой СНИЛС важный документ, и наверняка займётесь вопросом его
       оформления. Процесс
       оформления документа зависит от того, трудоустроены ли вы или не работаете на официальных основаниях.</div>
@@ -113,22 +115,21 @@
         </div>
       </div>
     </div>
-  </div>
-  </div>
-  <div class="form">
+  </section>
+  <section class="form">
     <div class="form__userpic">
       <img src="img/userpic.png" alt="userpic">
     </div>
     <div class="form__title">ЕСЛИ У ВАС ЕСТЬ ВОПРОСЫ, ЗАДАЙТЕ ИХ НАШИМ МЕНЕДЖЕРАМ</div>
-    <div class="form-item">
+    <form class="form-item">
       <div class="form-item__title">Задать вопрос менеджеру</div>
       <input class="form-item__value" placeholder="Ваше имя*" type="text">
       <input class="form-item__value" placeholder="Телефон*" type="text">
       <input class="form-item__value form-item__input" placeholder="Ваш вопрос.." type="text">
       <div class="form-item__button">Отправить запрос</div>
-    </div>
-  </div>
-  <div class="protection">
+    </form>
+  </section>
+  <section class="protection">
     <div class="protection__img">
       <img src="img/snils.png" alt="snils">
     </div>
@@ -143,22 +144,21 @@
       компании.
       Мы гарантируем ускоренное оформление СНИЛС. Просто заполните заявку на нашем сайте.
     </div>
-  </div>
-  <div class="registration">
-
-    <div class="registration-menu">
+  </section>
+  <section class="registration">
+    <nav class="registration-menu">
       <a class="registration-menu__link" href="">Главная</a>
       <a class="registration-menu__link" href="">Вопросы и Ответы</a>
       <a class="registration-menu__link" href="">Порядок работы</a>
       <a class="registration-menu__link" href="">Контакты</a>
       <a class="registration-menu__link" href="">Сделать заявку</a>
-    </div>
+    </nav>
     <div class="registration-form__wrap">
       <div class="registration__form">
         <div class="registration__title">У ВАС ПОЯВИЛИСЬ ВОПРОСЫ? ОСТАВИТЬ ЗАЯВКУ
           МЫ ВАМ ОТВЕТИМ В ТЕЧЕНИ 30 МИН
         </div>
-        <div class="registration-item">
+        <form class="registration-item">
           <div class="registration-item__property">
             <input class="registration-item__value" placeholder="Ваше имя" type="text">
             <input class="registration-item__value" placeholder="Телефон" type="text">
@@ -169,14 +169,14 @@
             <input class="registration-item__value registration-item__input_text" placeholder="Задавайте свой вопрос"
               type="text">
           </div>
-        </div>
+        </form>
       </div>
       <div class="registration__logo">
         <a class="registration__img">
           <img src="img/logo_and_tel.png" alt="logo_and_tel"></a>
       </div>
     </div>
-    <div class="footer">
+    <footer class="footer">
       <div class="footer-item">
         <div class="footer-item__property">Режим работы:</div>
         <div class="footer-item__value">Ежедневно с 10:00 до 22:00</div>
@@ -189,8 +189,8 @@
         <div class="footer-item__property">Наш адрес: </div>
         <div class="footer-item__value">ул. Сходненская, д. 50</div>
       </div>
-    </div>
-  </div>
+    </footer>
+  </section>
 </body>
 
 </html>
